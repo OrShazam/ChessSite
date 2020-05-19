@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">  
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet"> 
+    <link rel= "stylesheet" type = "text/css" href = "input.css">
+    <title> Create your chess profile</title>
+
+    
+</head>
+<body>
+        <nav class="navbar">
+                <a href="index.html">Home</a>
+                <a href="AboutMe.html">About Me</a>
+                <div class="dropdown">
+                  <button class="dropbtn">Other</button>
+                  <div class="dropdown-content"> 
+                    <a href="rules.html">Rules</a>
+                    <a href="gallery.html">Great Players Of The Past</a>
+                    <a href="send.html">Chess profile maker</a>
+                    <a href="analysis.html">Analysis board</a>
+                  </div>
+                </div>
+            </nav> 
+
+            <div class="container"> 
+  
+              <h2>Create Your Player Profile</h2>
+              
+              <form  autocomplete = "off" action = "recive.html" target = "_blank" method = "get">
+                
+                <div class="group">      
+                  <input name = "fname" type="text" required> 
+                  <span class="highlight"></span>
+                  <span class="bar"></span>
+                  <label>First Name</label>  
+                </div>
+                  
+                <div class="group">      
+                  <input name = "lname" type="text" required> 
+                  <span class="highlight"></span>
+                  <span class="bar"></span>
+                  <label>Last Name</label>
+                </div>
+                <div class="group">    
+                  <input name = "rating" class = "rating" type="text" required> 
+                  <span class="highlight"></span> 
+                  <span class="bar"></span>
+                  <label>Chess Rating</label> 
+                </div>
+                <div class="group">      
+                  <input name = "fed" type="text" required> 
+                  <span class="highlight"></span>
+                  <span class="bar"></span>
+                  <label>Federation</label> 
+                </div>
+               <input class = "sub" type="submit" value="Send">
+              </form>
+              
+            </div>
+            
+<div class = "center">
+    <p>Click on the submit button, and your profile will open up in a new page</p>
+    <p>If you want to find your chess rating you can go to <a class = "b" href = "http://www.elometer.net/" target = "_blank">EloMeter</a> </p>
+</div>
+<script> 
+ var submit = document.querySelector(".sub"); // setting submit as the submit element
+  submit.addEventListener("click", (event) => {
+    var rating = document.querySelector(".rating").value;  // setting rating as the rating element
+    if (isNaN(rating)) {
+      alert("please write a valid number"); // alerting the user if the rating is not a number
+      event.preventDefault(); // prevent the page from refreshing
+    }
+  });
+  </script>
+</body>
+</html>
+

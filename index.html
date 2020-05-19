@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Homepage</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel = "stylesheet" type = "text/css" href= "digitalclock.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+    <script src = "script.js"></script>
+    
+</head>
+<body>
+  
+  <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="AboutMe.html">About Me</a>
+      <div class="dropdown">
+        <button class="dropbtn">Other</button>
+        <div class="dropdown-content">
+          <a href="rules.html">Rules</a>
+          <a href="gallery.html">Great Players Of The Past</a>
+          <a href="send.html">Chess profile maker</a>
+          <a href="analysis.html">Analysis board</a>
+        </div>
+      </div>
+  </nav>
+
+  <main> 
+      <h1 class="centered">Welcome To The ChessSite.</h1> 
+      <div id="MyClockDisplay" class="clock" onload="showTime()">00:00:00</div>
+  </main>
+</body>
+</html>

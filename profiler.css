@@ -1,0 +1,49 @@
+* {
+    font-family:'Poppins',sans-serif;
+   
+  }
+.card {
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: auto;
+    text-align: center;
+    width:300px;   
+    height:400px;
+  }
+
+  
+  .title {
+    background: linear-gradient(to bottom, #cfc09f 22%,#634f2c 24%, #cfc09f 26%, #cfc09f 27%,#ffecb3 40%,#3a2c0f 78%); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 18px;
+  }
+  
+  button {
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px; 
+  }
+  
+  .rating {
+
+    font-size: 22px;
+    background-color: black;
+    color:white; 
+    
+  }
+  
+ 
+  img{
+      max-height:400px;
+  }
+ 
+  

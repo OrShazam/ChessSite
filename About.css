@@ -1,0 +1,54 @@
+
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+  .header,
+  .footer{
+    background: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
+    padding: 2rem;
+    text-align: center;
+    border: 5px solid white;
+    font-size: 18px;
+    color: rgb(78, 78, 78);
+    font-weight: 300;
+  }
+  
+ .sidebar, 
+ .main{
+ 
+  padding: 2rem;
+  background: linear-gradient(to right, #373b44, #4286f4);
+    text-align: center;
+    border: 5px solid white;
+    font-size: 18px;
+    color: white;
+    font-weight: 300;
+
+
+ }
+  
+  
+  .header,
+  .footer {
+    flex: 1 100%;
+  } 
+  .sidebar { 
+    flex: 1;
+  }
+  .main {
+    flex: 2;
+  }
+  .insta,
+  .twitter,
+  .facebook
+  {
+    width:20px;
+    height:20px;
+    margin-left:10px;
+
+  
+  }
+  

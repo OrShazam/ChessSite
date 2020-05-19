@@ -1,0 +1,22 @@
+
+
+.clock {
+  font-family:'Raleway',sans-serif;
+  position: absolute;
+  top: 13%;
+  left: 2%;
+  color: #FFF;
+  font-size: 60px;
+  letter-spacing: 7px;
+  animation: glow 0.01s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 15px #fff, 0 0 25px #65f5ff, 0 0 35px #65f5ff, 0 0 45px #65f5ff, 0 0 55px #65f5ff, 0 0 65px #65f5ff, 0 0 75px #65f5ff;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #65f5ff, 0 0 40px #65f5ff, 0 0 50px #65f5ff, 0 0 60px #65f5ff, 0 0 70px #65f5ff, 0 0 80px #65f5ff;
+  }
+} 

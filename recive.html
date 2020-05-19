@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="profiler.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <title>Profile</title>
+    <script>
+       
+        function setParamsFromGet() {
+            //Get the parms from the url and set them in the document
+            //for the player's id
+            var t;
+            parms = new URLSearchParams(location.search);
+            var l = parms.get("lname");
+            var f = parms.get("fname");
+            var r = parms.get("rating");
+            var fed = parms.get("fed"); 
+            var fn = `${f} ${l}`;
+
+            if (r >= 2200 && r < 2300){
+                t = "Candidate Master"
+            }
+            else if (r >= 2300 && r < 2400){
+                t = "Fide Master" 
+            }
+            else if (r >= 2400 && r < 2500){
+                t = "International Master"
+            }
+            else if (r >= 2500){
+                t = "Grand Master"
+            }
+            else {
+                t = "None"
+            }
+
+           
+           
+            document.getElementById("title").innerHTML = t;          
+            document.getElementById("fed").innerHTML = fed;
+            document.getElementById("fullname").innerHTML = fn;
+            document.getElementById("rating").innerHTML = r;
+            console.log(fn); console.log(t); console.log(r); console.log(fed);
+
+            
+        }</script>
+</head>
+<body onload="setParamsFromGet()">
+        <nav class="navbar">
+                <a href="index.html">Home</a>
+                <a href="AboutMe.html">About Me</a>
+                <div class="dropdown">
+                  <button class="dropbtn">Other</button>
+                  <div class="dropdown-content">
+                    <a href="rules.html">Rules</a>
+                    <a href="gallery.html">Great Players Of The Past</a>
+                    <a href="send.html">Chess profile maker</a>
+                    <a href="analysis.html">Analysis board</a>
+                  </div>
+                </div>
+            </nav>
+            <div class="card">
+                    <img src="unknown.jpg" alt="unknown" style="width:100%">
+                    <h1 id = "fullname">.</h1>
+                    <p id ="rating">.</p>
+                    <p id = "title" class = "title">.</p>             
+                    <p id = "fed" class = "rating">.</p>
+           </div>
+                      
+
+
+
+
+
+
+
+
+
+
+   
+    
+
+</body>
+</html>
